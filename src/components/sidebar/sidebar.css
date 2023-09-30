@@ -1,0 +1,94 @@
+@import url(../../index.css);
+
+sidebar__wrapper{
+    flex: 3;
+    margin-bottom: 2rem;
+}
+.sidebar{
+    flex: 3;
+    height:100vh;
+    width: 200px;
+    background-color:#ffffff;
+    font-size: 15px;
+    transition: all 0.5s;
+    position: fixed;
+    /* box-shadow: 3px 9px 20px #f8f8f8; */
+    border-right: 1px solid gray;
+    margin-top: 4rem;
+}
+
+.sidebar__list__container{
+    padding-left: 3px;
+    list-style-type: none;
+}
+
+.sidebar__list__container  > h1{
+    margin: 1px;
+    color: brown;
+    font-size: 16px;
+    margin-left: 15px;
+
+}
+
+
+.sidebar__list__container > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+
+.sidebar__close{
+    margin-left: -200px;
+    transition: all 0.5s;
+    height: 100vh;
+    margin-top: 4rem;
+}
+
+/* .sidebar__list__container{
+    list-style-type: none;
+} */
+
+.sidebar__list__item{
+    border-bottom:1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.sidebar__list__item:hover{
+    border-bottom:1px solid gray;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.sidebar__list__item > i {
+    margin-left: 15px;
+}
+
+.sidebar__list__item > p {
+    margin-left: 9px;
+}
+
+/* .sidebar__social__icons__container{
+    list-style-type: none;
+} */
+
+@media screen and (max-width:480px){
+    .sidebar{
+        margin-left: -200px;
+        transition: all 0.5s;
+    }
+
+    .sidebar__close{
+        margin-left: 1px;
+        font-size: 15px;
+        background-color:#ffffff;
+        width: 130px;
+        height: 100vh;
+        position: fixed;
+        z-index: 999;
+        border-right: 1px solid gray;
+        transition: all 0.5s;
+    }
+
+}

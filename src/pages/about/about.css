@@ -1,0 +1,47 @@
+about{
+    flex: 9;
+    height: calc(100% - 40px);
+    background-color:var(--main-bg-color-white);
+    margin: 0.4rem;
+    margin: 1rem;
+    box-shadow: 3px 9px 20px #f8f8f8;    
+}
+
+
+    .about{
+        margin-top: 4rem;
+        background-color: rebeccapurple;
+        height: 100%;
+        margin: 4rem 1rem auto 13rem;
+        flex: 9;
+        transition: all 0.5s;
+    }
+
+    .menuclick__resize{
+        margin-top: 4rem;
+        background-color: rebeccapurple;
+        height: 100%;
+        margin: 4rem 1rem auto 1.8rem;
+        flex: 9;
+    }
+
+
+    @media screen and (max-width:480px){
+        .about{
+            margin-top: 4rem;
+            background-color: rebeccapurple;
+            height: 100%;
+            margin: 4rem 0.5rem auto 0.5rem;
+            flex: 9;
+            transition: all 0.5s;
+        }
+
+        .menuclick__resize{
+            margin-top: 4rem;
+            background-color: rebeccapurple;
+            height: 100%;
+            margin: 4rem 0.5rem auto 0.9rem;
+            flex: 9;
+            transition: all 0.5s;
+        }
+    }

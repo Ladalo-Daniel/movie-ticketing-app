@@ -1,0 +1,139 @@
+
+.header{
+    background-color: var(--main-bg-color-white);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+}
+
+.menuIconContainer{
+    color: gray;
+    margin: 2rem;
+    align-self: center;
+}
+
+.avartar{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo__container2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: brown;
+}
+
+.logo{
+    width: 38px;
+    height: 38px;
+    font-size: 25px;
+    background-color: white;
+    color: rebeccapurple;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+logo:hover{
+    background-color: rebeccapurple;
+    color: white;
+    border: 2px solid white;
+    animation: rotateBorder 4s linear infinite;
+    border: 5px solid white;
+}
+
+.top__nav__links{
+  font-size: 16px;
+  text-decoration: none;
+  color: brown;
+  cursor: pointer;
+}
+
+.input {
+  border: 1px solid brown;
+  padding: 7px;
+  width: 150px;
+  border-radius: 15px;
+  color: black;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.topnav__list__container{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.top__list__item{
+  margin-left: 15px;
+}
+
+
+
+@keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width:480px){
+    .logo{
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        color: rebeccapurple;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        margin-right: 0.1rem;
+        font-size: 23px;
+    }
+
+    .top__nav__links{
+      font-size: 12px;
+    }
+
+    .menuIconContainer{
+      margin: 0.5rem;
+    }
+
+    .logo__container2 > h2{
+      font-size: 13px;
+    }
+
+    .input{
+      padding: 4px;
+      font-size: 14px;
+    }
+
+    .input::placeholder{
+      font-size: 13px;
+    }
+
+    .avartar{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
